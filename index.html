@@ -1,0 +1,423 @@
+\<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Content Writer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="scroll-progress"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo" data-i18n="navLogo">Phu Nguyen</a>
+  <ul class="nav-links">
+    <li><a href="#about" data-i18n="navAbout">Về tôi</a></li>
+    <li><a href="#services" data-i18n="navServices">Dịch vụ</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact" data-i18n="navContact">Liên hệ</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="toggle-btn" id="lang-toggle" type="button">EN</button>
+    <button class="toggle-btn" id="theme-toggle" type="button" data-i18n="themeToggle">Light</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <span class="hero-label fade-up" data-i18n="heroLabel">Content Writer & Strategist</span>
+    <h1 class="hero-name fade-up delay-1" data-i18n-html="heroName">
+      Chữ viết<br>
+      tạo nên<br>
+      <em>thương hiệu.</em>
+    </h1>
+    <p class="hero-desc fade-up delay-2" data-i18n="heroDesc">
+      Tôi viết những nội dung có hồn — chạm đến cảm xúc độc giả, xây dựng niềm tin với thương hiệu và thúc đẩy hành động mua hàng.
+    </p>
+    <div class="hero-ctas fade-up delay-3">
+      <a href="#portfolio" class="btn-primary" data-i18n="heroPrimaryCta">Xem portfolio</a>
+      <a href="#contact" class="btn-text" data-i18n="heroSecondaryCta">Liên hệ ngay</a>
+    </div>
+
+    <div class="hero-stats fade-up delay-4">
+      <div class="stat">
+        <div class="stat-num">1+</div>
+        <div class="stat-label" data-i18n="statExperience">Năm kinh nghiệm</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">50+</div>
+        <div class="stat-label" data-i18n="statProjects">Bài viết hoàn thành</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">20+</div>
+        <div class="stat-label" data-i18n="statBrands">Sản phẩm được thiết kế</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <div class="hero-photo-placeholder">        
+        <img src="./images/thumbnail.jpg" alt="Phu Nguyen" class="hero-photo-placeholder-image">
+        <div class="hero-quote" data-i18n-html="heroQuote">
+          "Mỗi từ là một lựa chọn.<br>Tôi chọn những từ quan trọng."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about">
+    <div class="about-left">
+      <span class="section-label" data-i18n="aboutLabel">Về tôi</span>
+      <h2 class="section-title" data-i18n-html="aboutTitle">Người viết với<br><em>chiến lược rõ ràng</em></h2>
+      <p class="about-body" data-i18n="aboutBody1">
+        Tôi là content writer với hơn 3 năm kinh nghiệm trong lĩnh vực marketing nội dung. Xuất phát từ niềm đam mê với ngôn ngữ và tư duy phân tích, tôi không chỉ viết — tôi xây dựng hệ thống nội dung có mục tiêu rõ ràng.
+      </p>
+      <!-- <p class="about-body" data-i18n="aboutBody2">
+        Từ blog SEO đến copywriting quảng cáo, từ content mạng xã hội đến email marketing — tôi hiểu rằng mỗi dạng nội dung cần một giọng điệu và chiến lược riêng để phát huy tối đa hiệu quả.
+      </p> -->
+      <div class="skills-tags">
+        <span class="skill-tag">SEO Writing</span>
+        <span class="skill-tag">Copywriting</span>
+        <span class="skill-tag">Social Media</span>
+        <span class="skill-tag">Content Strategy</span>
+        <span class="skill-tag">Graphic Design</span>
+        <span class="skill-tag">Script Video</span>
+      </div>
+    </div>
+    <div class="about-right">
+      <p class="about-quote" data-i18n="aboutQuote">
+        "Nội dung tốt không phải là nội dung được viết hay nhất — mà là nội dung đúng người, đúng lúc, đúng mục đích."
+      </p>
+      <p class="about-quote-author" data-i18n="aboutQuoteAuthor">— Quan điểm làm việc của tôi</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-section">
+  <div class="services-header">
+    <div>
+      <span class="section-label" data-i18n="servicesLabel">Dịch vụ</span>
+      <h2 class="section-title" data-i18n-html="servicesTitle">Tôi có thể <em>giúp gì</em><br>cho bạn?</h2>
+    </div>
+    <p class="services-desc" data-i18n="servicesDesc">Mỗi dịch vụ được thiết kế để phục vụ một mục tiêu kinh doanh cụ thể.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-number">01</div>
+      <div class="service-title">Content Marketing</div>
+      <p class="service-desc">Blog, bài viết chuyên sâu, case study — nội dung tối ưu SEO, thu hút organic traffic và tạo dựng thẩm quyền trong ngành.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-number">02</div>
+      <div class="service-title">Copywriting</div>
+      <p class="service-desc">Landing page, quảng cáo, email — từng chữ được cân nhắc để thuyết phục, chuyển đổi và tạo kết quả đo lường được.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-number">03</div>
+      <div class="service-title">Social Media Content</div>
+      <p class="service-desc">Caption, script video, content calendar — nội dung đồng nhất, tối ưu cho từng nền tảng và tăng tương tác.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-number">04</div>
+      <div class="service-title">Brand Storytelling</div>
+      <p class="service-desc">Xây dựng giọng điệu thương hiệu nhất quán, viết về sứ mệnh, giá trị và câu chuyện để tạo sự kết nối cảm xúc với khách hàng.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-number">05</div>
+      <div class="service-title">Graphic Design</div>
+      <p class="service-desc">Lên kế hoạch và thiết kế ảnh giúp tăng tỉ lệ chuyển đổi và thúc đẩy doanh thu.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-number">06</div>
+      <div class="service-title">Content Strategy</div>
+      <p class="service-desc">Lên kế hoạch nội dung tổng thể: audit, competitor research, content pillar, editorial calendar — từ chiến lược đến thực thi.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio-section">
+  <div class="portfolio-header">
+    <div>
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title" data-i18n-html="portfolioTitle">Những tác phẩm<br><em>nổi bật</em></h2>
+    </div>
+    <a href="#contact" class="btn-text" data-i18n="portfolioCta">Xem toàn bộ</a>
+  </div>
+  <div class="works-grid">
+
+    <div class="work-card featured">
+      <div class="work-visual">
+        <img src="./works/work1.png" alt="Blog" class="work-image">
+        <img src="./works/work2.png" alt="Blog" class="work-image">
+        <span class="work-tag">Social media</span>
+      </div>
+      <div class="work-content">
+        <p class="work-meta">Sao vuông Phú Thạnh · 2025</p>
+        <h3 class="work-title">Chiến lược nội dung 9 tháng giúp tăng 732.5% organic traffic</h3>
+        <p class="work-excerpt">Xây dựng hệ thống hàng loạt bài blog theo topic cluster về hình ảnh và chế độ của lực lượng vũ trang. Sau 9 tháng, fanpage tăng từ 1.000 lên 224.104 lượt truy cập, lượt theo dõi đạt 194 tăng 3,780%.</p>
+        <a href="https://www.facebook.com/profile.php?id=100083315283682" target="_blank" rel="noopener noreferrer" class="work-link" data-i18n="workLink">Xem chi tiết →</a>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <div class="work-visual">
+        <img src="./works/designer.jpg" alt="Blog" class="work-image">
+        <span class="work-tag">Design</span>
+      </div>
+      <div class="work-content">
+        <p class="work-meta">Design</p>
+        <h3 class="work-title">Tăng thêm sự sống động và bắt mắt với các thiết kế</h3>
+        <p class="work-excerpt">Thiết kế ảnh phối hợp với nội dung bài để tăng tỷ lệ chuyển đổi và thúc đẩy doanh thu.</p>
+        <a href="works/design.pdf" target="_blank" rel="noopener noreferrer" class="work-link" data-i18n="workLink">Xem chi tiết →</a>
+      </div>
+    </div>
+
+    <div class="work-card">
+      <div class="work-visual">
+        <img src="./works/football.jpg" alt="Blog" class="work-image"/>
+        <span class="work-tag">Social Media</span>
+      </div>
+      <div class="work-content">
+        <p class="work-meta">My Football Team · 2025</p>
+        <h3 class="work-title">Cùng đội xây dựng hình ảnh từ con số 0</h3>
+        <p class="work-excerpt">Lên ý tưởng và các bài viết cũng như là hình ảnh video của đội.</p>
+        <a href="https://www.facebook.com/profile.php?id=61585075649376" class="work-link" data-i18n="workLink">Xem chi tiết →</a>
+        <div class="work-socials">
+          <a href="https://www.facebook.com/profile.php?id=61585075649376" target="_blank" rel="noopener noreferrer" class="social-item facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/fc.simple/" target="_blank" rel="noopener noreferrer" class="social-item instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@simple.fcc?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="social-item tiktok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="contact-left">
+    <span class="section-label" data-i18n="contactLabel">Liên hệ</span>
+    <h2 class="section-title" data-i18n-html="contactTitle">Hãy cùng tạo<br>nội dung <em>xuất sắc</em></h2>
+    <p class="contact-desc" data-i18n="contactDesc">
+      Bạn có một dự án cần nội dung chất lượng? Tôi luôn mở cửa cho những cộng tác ý nghĩa. Hãy gửi thông tin và tôi sẽ phản hồi trong vòng 24 giờ.
+    </p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-item-icon">✉</div>
+        <span>nguyentrongphu1204@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon">☎</div>
+        <span>+84 932 619 483</span>
+      </div>
+      <!-- <div class="contact-item">
+        <div class="contact-item-icon">🔗</div>
+        <span>linkedin.com/in/lan-nguyen-writer</span>
+      </div> -->
+    </div>
+  </div>
+
+  <form class="contact-form" onsubmit="handleSubmit(event)">
+    <div class="form-grid">
+      <div class="form-group">
+        <label data-i18n="formNameLabel">Họ và tên</label>
+        <input type="text" placeholder="Nguyễn Văn A" data-i18n-placeholder="formNamePlaceholder">
+      </div>
+      <div class="form-group">
+        <label data-i18n="formEmailLabel">Email</label>
+        <input type="email" placeholder="email@company.com">
+      </div>
+    </div>
+    <div class="form-group">
+      <label data-i18n="formServiceLabel">Dịch vụ quan tâm</label>
+      <input type="text" placeholder="VD: Blog SEO, Copywriting, Social Media..." data-i18n-placeholder="formServicePlaceholder">
+    </div>
+    <div class="form-group">
+      <label data-i18n="formProjectLabel">Mô tả dự án</label>
+      <textarea rows="4" placeholder="Chia sẻ thêm về dự án, mục tiêu và timeline của bạn..." data-i18n-placeholder="formProjectPlaceholder"></textarea>
+    </div>
+    <button type="submit" class="btn-submit" data-i18n="formSubmit">Gửi yêu cầu →</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span data-i18n="footerCopyright">© 2024 Phu Nguyen · Content Writer</span>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/phun1204" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://www.facebook.com/phu.nguyen.237567/" target="_blank" rel="noopener noreferrer">Facebook</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="./index.js"></script>
+<script>
+  const translations = {
+    vi: {
+      navLogo: 'Phu Nguyen',
+      navAbout: 'Về tôi',
+      navServices: 'Dịch vụ',
+      navContact: 'Liên hệ',
+      themeToggle: 'Light',
+      heroLabel: 'Content Writer & Strategist',
+      heroName: 'Chữ viết<br>tạo nên<br><em>thương hiệu.</em>',
+      heroDesc: 'Tôi viết những nội dung có hồn — chạm đến cảm xúc độc giả, xây dựng niềm tin với thương hiệu và thúc đẩy hành động mua hàng.',
+      heroPrimaryCta: 'Xem portfolio',
+      heroSecondaryCta: 'Liên hệ ngay',
+      statExperience: 'Năm kinh nghiệm',
+      statProjects: 'Bài viết hoàn thành',
+      statBrands: 'Sản phẩm được thiết kế',
+      heroQuote: '"Mỗi từ là một lựa chọn.<br>Tôi chọn những từ quan trọng."',
+      aboutLabel: 'Về tôi',
+      aboutTitle: 'Người viết với<br><em>chiến lược rõ ràng</em>',
+      aboutBody1: 'Tôi là content writer với hơn 1 năm kinh nghiệm trong lĩnh vực marketing nội dung. Xuất phát từ niềm đam mê với ngôn ngữ và tư duy phân tích, tôi không chỉ viết — tôi xây dựng hệ thống nội dung có mục tiêu rõ ràng.',
+      // aboutBody2: 'Từ blog SEO đến copywriting quảng cáo, từ content mạng xã hội đến email marketing — tôi hiểu rằng mỗi dạng nội dung cần một giọng điệu và chiến lược riêng để phát huy tối đa hiệu quả.',
+      aboutQuote: '"Nội dung tốt không phải là nội dung được viết hay nhất — mà là nội dung đúng người, đúng lúc, đúng mục đích."',
+      aboutQuoteAuthor: '— Quan điểm làm việc của tôi',
+      servicesLabel: 'Dịch vụ',
+      servicesTitle: 'Tôi có thể <em>giúp gì</em><br>cho bạn?',
+      servicesDesc: 'Mỗi dịch vụ được thiết kế để phục vụ một mục tiêu kinh doanh cụ thể.',
+      portfolioTitle: 'Những tác phẩm<br><em>nổi bật</em>',
+      portfolioCta: 'Xem toàn bộ',
+      workLink: 'Xem chi tiết →',
+      testimonialsLabel: 'Nhận xét',
+      testimonialsTitle: 'Khách hàng <em>nói gì</em><br>về tôi?',
+      contactLabel: 'Liên hệ',
+      contactTitle: 'Hãy cùng tạo<br>nội dung <em>xuất sắc</em>',
+      contactDesc: 'Bạn có một dự án cần nội dung chất lượng? Tôi luôn mở cửa cho những cộng tác ý nghĩa. Hãy gửi thông tin và tôi sẽ phản hồi trong vòng 24 giờ.',
+      formNameLabel: 'Họ và tên',
+      formNamePlaceholder: 'Nguyễn Văn A',
+      formEmailLabel: 'Email',
+      formServiceLabel: 'Dịch vụ quan tâm',
+      formServicePlaceholder: 'VD: Blog SEO, Copywriting, Social Media...',
+      formProjectLabel: 'Mô tả dự án',
+      formProjectPlaceholder: 'Chia sẻ thêm về dự án, mục tiêu và timeline của bạn...',
+      formSubmit: 'Gửi yêu cầu →',
+      footerCopyright: '© 2024 Phu Nguyen · Content Writer',
+      submitted: 'Đã gửi! ✓'
+    },
+    en: {
+      navLogo: 'Phu Nguyen',
+      navAbout: 'About',
+      navServices: 'Services',
+      navContact: 'Contact',
+      themeToggle: 'Light',
+      heroLabel: 'Content Writer & Strategist',
+      heroName: 'Words that shape<br>your<br><em>brand story.</em>',
+      heroDesc: 'I craft meaningful content that connects with readers, builds brand trust, and drives measurable business actions.',
+      heroPrimaryCta: 'View portfolio',
+      heroSecondaryCta: 'Get in touch',
+      statExperience: 'Years of experience',
+      statProjects: 'Completed projects',
+      statBrands: 'Trusted brands',
+      heroPhotoCaption: 'Place your photo here',
+      heroQuote: '"Every word is a choice.<br>I choose the ones that matter."',
+      aboutLabel: 'About',
+      aboutTitle: 'A writer with<br><em>clear strategy</em>',
+      aboutBody1: 'I am a content writer with 3+ years of experience in content marketing. Driven by a passion for language and analytical thinking, I do more than write — I build content systems with clear goals.',
+      // aboutBody2: 'From SEO blogs to ad copy, from social content to email marketing — each format needs the right voice and strategy to perform at its best.',
+      aboutQuote: '"Great content is not what sounds the best — it is what reaches the right audience, at the right time, for the right purpose."',
+      aboutQuoteAuthor: '— My working philosophy',
+      servicesLabel: 'Services',
+      servicesTitle: 'How can I <em>help</em><br>your brand?',
+      servicesDesc: 'Each service is built to support a specific business objective.',
+      portfolioTitle: 'Selected<br><em>works</em>',
+      portfolioCta: 'View all',
+      workLink: 'View details →',
+      testimonialsLabel: 'Testimonials',
+      testimonialsTitle: 'What clients <em>say</em><br>about me',
+      contactLabel: 'Contact',
+      contactTitle: 'Let us create<br><em>outstanding</em> content',
+      contactDesc: 'Have a project that needs impactful content? I am open to meaningful collaborations. Share your brief and I will respond within 24 hours.',
+      formNameLabel: 'Full name',
+      formNamePlaceholder: 'John Doe',
+      formEmailLabel: 'Email',
+      formServiceLabel: 'Service needed',
+      formServicePlaceholder: 'Ex: SEO blog, copywriting, social media...',
+      formProjectLabel: 'Project brief',
+      formProjectPlaceholder: 'Tell me about your goals, timeline, and expectations...',
+      formSubmit: 'Send request →',
+      footerCopyright: '© 2024 Phu Nguyen · Content Writer',
+      submitted: 'Sent! ✓'
+    }
+  };
+
+  const langToggle = document.getElementById('lang-toggle');
+  const themeToggle = document.getElementById('theme-toggle');
+  let currentLang = localStorage.getItem('portfolioLang') || 'vi';
+
+  function applyLanguage(lang) {
+    const dict = translations[lang];
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const key = el.dataset.i18n;
+      if (dict[key]) el.textContent = dict[key];
+    });
+
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+      const key = el.dataset.i18nHtml;
+      if (dict[key]) el.innerHTML = dict[key];
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+      const key = el.dataset.i18nPlaceholder;
+      if (dict[key]) el.placeholder = dict[key];
+    });
+
+    langToggle.textContent = lang === 'vi' ? 'EN' : 'VI';
+    currentLang = lang;
+    localStorage.setItem('portfolioLang', lang);
+  }
+
+  function applyTheme(theme) {
+    document.body.classList.toggle('theme-light', theme === 'light');
+    themeToggle.textContent = theme === 'light' ? 'Dark' : translations[currentLang].themeToggle;
+    localStorage.setItem('portfolioTheme', theme);
+  }
+
+  langToggle.addEventListener('click', () => {
+    applyLanguage(currentLang === 'vi' ? 'en' : 'vi');
+    const savedTheme = localStorage.getItem('portfolioTheme') || 'dark';
+    applyTheme(savedTheme);
+  });
+
+  themeToggle.addEventListener('click', () => {
+    const isLight = document.body.classList.contains('theme-light');
+    applyTheme(isLight ? 'dark' : 'light');
+  });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.btn-submit');
+    btn.textContent = translations[currentLang].submitted;
+    btn.style.background = '#36d399';
+    setTimeout(() => {
+      btn.textContent = translations[currentLang].formSubmit;
+      btn.style.background = '';
+    }, 3000);
+  }
+
+  applyLanguage(currentLang);
+  applyTheme(localStorage.getItem('portfolioTheme') || 'dark');
+  initPortfolioAnimations('smooth');
+</script>
+</body>
+</html>

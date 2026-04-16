@@ -790,9 +790,16 @@ body.theme-light .photo-caption {
 
 @media (max-width: 900px) {
   .work-card.featured .work-visual {
+    width: 100%;
+    height: 50%;
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .work-card.featured .work-visual img{
+    object-fit: fill;
+  }
+  
   nav {
     padding: 1.1rem 2rem;
   }
